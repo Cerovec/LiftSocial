@@ -1,0 +1,43 @@
+<div class="lift:PublishBlogPost?form=post;multipart=true span-17" id="publishActivityForm">  
+  <img alt="" id="formimg" style="padding-left:160px" class="last"
+       src="/images/arrow.gif">
+  </img>
+  <script type="text/javascript">
+    $(document).ready(function() {
+    $("#subjectInput").autoGrow();
+    });
+  </script>
+  <div class="span-17 last">
+    <div>Subject:</div>
+    <textarea name="subject" rows="1" 
+	      cols="80" id="subjectInput" class="textbox span-17"></textarea>
+  </div>
+  
+  <script type="text/javascript">
+    $(document).ready(function() {
+    $("#blogInput").autoGrow();
+    });
+  </script>
+  <div class="span-17 last">
+    <div>Text:</div>
+    <textarea name="subject" rows="16" 
+	      cols="80" id="blogInput" class="textbox span-17"></textarea>
+  </div>
+  
+  <script type="text/javascript">
+    $(document).ready(function() {
+    $("#keywordsInput").autoGrow();
+    });
+  </script>
+  <div class="span-17 last">
+    <div>Keywords:</div>
+    <textarea name="subject" rows="1" 
+	      cols="80" id="keywordsInput" class="textbox span-17"></textarea>
+  </div>
+  <div class="span-17 last">
+    <div>Attached file:</div>
+    <input type="file" name="datafile" class="left" /> 
+    <input type="submit" 
+	   id="publishPostBtn" value="Post it" class="right"/>
+  </div>
+</div>

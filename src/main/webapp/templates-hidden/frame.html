@@ -1,0 +1,99 @@
+<div id="main_content"
+     class="container contentcolor lift:surround?with=default;at=placeholder">
+  <div class="column span-12 last" style="text-align: right">
+    <h1 class="alt">LiftSocial</h1>
+    <h2>Social network in Scala/Lift technology</h2>
+  </div>
+   <img alt="" id="ajax-loader" 
+	style="display:none; margin-bottom: 0px; margin-left: 5px" 
+	class="left"
+	src="/images/ajax-loader.gif" />
+  <hr />
+  
+  <div class="column span-6 colborder sidebar">
+    <div class="lift:MenuChooser">
+      Menu for logged in users, otherwise login form
+    </div>
+    <div>
+      <ul>
+	<lift:Menu.group group="account"> 
+	  <li class="bar"><menu:bind /></li>
+	</lift:Menu.group> 
+      </ul>
+    </div>
+
+    <div class="widget">
+      Useful links:
+      <ul>
+	<li>
+	  <a href="http://www.unizg.hr">
+	    University of Zagreb
+	  </a>
+	</li>
+	<li>
+	  <a href="http://www.fer.hr">
+	    Faculty of Electrical Engineering and Computing
+	  </a>
+	</li>
+	<li>
+	  <a href="http://www.zesoi.fer.hr/">
+	    Department of Electronic Systems and Information Processing
+	  </a>
+	</li>
+      </ul>
+    </div>
+
+    <div class="widgetbox">
+      Other useful, more technical links:
+      <ul>
+	<li>
+	  <a href="http://liftweb.net/">
+	    Lift Web Framework
+	  </a>
+	</li>
+	<li>
+	  <a href="http://www.scala-lang.org/">
+	    The Scala Programming Language
+	  </a>
+	</li>
+	<li>
+	  <a href="http://jquery.com/">
+	    jQuery JavaScript Library
+	  </a>
+	</li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="lift:Msgs" ></div>
+      <hr class="space">
+    </div>
+  </div>
+  
+  <div class="column span-17 last">
+    <div id="content">
+      moj sadrzaj
+    </div>
+    <hr class="space" />
+  </div>
+  
+  <hr />
+  
+  <div>
+    <center>
+      More menu items:<br />
+      <span class="lift:Menu.group?group=bottom"></span>
+    </center>
+    <br />
+  </div>
+  <hr />
+  
+  <div class="column span-23 last" style="text-align: center">
+    <h4 class="alt">
+      <a href="http://localhost:8080"><em>LiftSocial</em></a> 
+      is Copyright 2011 FER, Croatia
+    </h4>
+  </div>
+</div>
+
+

@@ -1,0 +1,125 @@
+.widget {
+      border:1px solid #ccc;
+      background:#f5f5f5;
+      padding:5px;
+      margin:10px 0 0 0;
+      font-size:8pt;
+}
+
+.widgetbox {
+      border:1px solid #ccc;
+      background:#f5f5f5;
+      padding:5px;
+      margin:10px 0 0 0;
+      font-size:8pt;
+}
+
+.edit_error_class {
+	display: block;
+	color: red;
+}
+
+.sidebar ul {
+	margin:0;
+	padding:0;
+	border-bottom:1px solid #ccc;
+}
+	 
+.sidebar ul li {
+	margin:0;
+	padding:0;
+	list-style:none;
+	border:1px solid #ccc;
+	border-bottom:none;
+}
+
+.sidebar ul li a {
+	display:block;
+	padding:3px;
+	text-indent:30px;
+	text-decoration:none;
+}
+
+.sidebar ul li span {
+	display:block;
+	padding:3px;
+	text-indent:30px;
+	text-decoration:none;
+}
+
+.sidebar ul li a:hover {
+	background-color: #eee;
+}
+
+.imgHolder {
+	float: left;
+}
+
+#contactaddform {
+	float: right;
+}
+
+.borderBottom {
+	padding-bottom:10px;
+	margin-bottom:10px;
+	border-bottom:1px solid #eee;
+}
+
+.nolistbutton {
+	list-style-type:none
+}
+
+.right {
+	float: right
+}
+
+.backgroundcolor {
+	background-color: #FFFFFF
+}
+
+.contentcolor {
+	background-color: #FFFFFF
+}
+
+.emphcolor {
+	background-color: #F5F5F5
+}
+
+textarea {
+	width:100%;
+	height:auto;
+	padding:0px;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 110%;
+	font-family: inherit;
+}
+
+p + p {
+	text-indent: 0;
+	margin: 0 0 1em;
+}
+
+p {
+    margin: 0 0 1em;
+}
+
+table p {
+    margin: 0;
+}
+
+.profiletable th {
+	width:130px;
+}
+
+h2 {
+	color:#036;
+}
+
+h1.alt {
+	color:#025;
+}
+
+h3,h4 {
+	color:#025;
+}

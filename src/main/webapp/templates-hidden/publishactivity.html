@@ -1,0 +1,25 @@
+<div class="activitycontent span-17 last append-bottom">
+  <button id="showComment">Make comment</button>
+  <button id="showBlog">Make blog post</button>
+
+  <script>
+    $("#showComment").click(function () {
+      $(".publishblog").hide(40);
+      $(".publishpost").show(40);
+    });
+
+    $("#showBlog").click(function () {
+      $(".publishpost").hide(40);
+      $(".publishblog").show(40);
+    });
+  </script>
+
+  <div class="publishpost">
+    <span class="lift:embed?what=publishpost"></span>
+  </div>
+  <div class="publishblog" style="display:none">
+    <span class="lift:embed?what=publishblogpost"></span>
+  </div>
+</div>
+
+	
