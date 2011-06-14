@@ -1,0 +1,4 @@
+db.driver=org.postgresql.Driver
+db.url=jdbc:postgresql:workdb
+db.user=cerovec
+db.password=asd

@@ -95,5 +95,13 @@ class Boot {
 
     // Make a transaction span the whole HTTP request
     S.addAround(DB.buildLoanWrapper)
+
+    var activityType = ActivityType.create
+    activityType.typeString("blog")
+    activityType.save;
+
+    ActivityType.create
+    activityType.typeString("post")
+    activityType.save;
   }
 }

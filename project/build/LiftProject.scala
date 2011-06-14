@@ -21,4 +21,24 @@ class LiftProject(info: ProjectInfo) extends DefaultWebProject(info) {
     "ch.qos.logback" % "logback-classic" % "0.9.26",
     "org.scala-tools.testing" %% "specs" % "1.6.6" % "test->default"
   ) ++ super.libraryDependencies
+
+  val jettyWebPath = "src" / "main" / "webapp" / "WEB-INF" / "jetty-web.xml"
+
+  lazy val installProductionRunMode = task {
+    FileUtilities.copyFile("project" / "jetty-web.xml",
+                           jettyWebPath,
+                           log)
+    log.info("Copied jetty-web.xml into place")
+    None
+  } describedAs("Install a jetty-web.xml that sets the run mode to production")
+
+  lazy val superPackage = super.packageAction dependsOn(installProductionRunMode)
+
+  lazy val removeProductionRunMode = task {
+    FileUtilities.clean(jettyWebPath, log)
+    None
+  } describedAs("Remove jetty-web.xml and hence set run mode back to testing")
+
+  override def packageAction = removeProductionRunMode dependsOn(superPackage) describedAs BasicWebScalaProject.PackageWarDescription
+
 }
