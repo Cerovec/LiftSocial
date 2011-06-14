@@ -22,7 +22,7 @@ import Helpers._
 import _root_.scala.testing.SUnit
 import _root_.net.liftweb.mapper._
 import _root_.java.sql.{Connection, DriverManager}
-import _root_.java.io.File
+import _root_.java.io.{File => JFile}
 
 object DBProviders {
   def asList = PostgreSqlProvider :: Nil
@@ -45,9 +45,9 @@ object DBProviders {
     def vendor : Vendor
 
     def setupDB {
-      val f = new File(filePath)
+      val f = new JFile(filePath)
 
-      def deleteIt(file: File) {
+      def deleteIt(file: JFile) {
         if (file.exists) {
           if (file.isDirectory) file.listFiles.foreach{f => deleteIt(f)}
           file.delete

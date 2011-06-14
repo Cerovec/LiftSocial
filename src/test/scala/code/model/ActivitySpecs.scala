@@ -132,7 +132,7 @@ object ActivitySpecs extends Specification {
       // unsuccessful because ActicityType doesn't exist
       var userNovak = User.find(By(User.firstName, "Novak"))
       var activity = Activity.createBlogPost("Prva tema", 
-					     "Ovo je moj prvi blog post")
+					     "Ovo je moj prvi blog post", Empty, Nil)
 
       for {u <- userNovak
 	   a <- activity} {
@@ -151,7 +151,7 @@ object ActivitySpecs extends Specification {
       var t = createType("blog")
       t.save
 
-      activity = Activity.createBlogPost("Prva tema", "Ovo je moj prvi blog post")
+      activity = Activity.createBlogPost("Prva tema", "Ovo je moj prvi blog post", Empty, Nil)
       for {u <- userNovak
 	   a <- activity} {
 	u.addActivity(a)
